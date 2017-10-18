@@ -24,7 +24,8 @@ module ChefBrowser
       ['Environments', '/environments', '/environment'],
       ['Roles',        '/roles',        '/role'],
       ['Data Bags',    '/data_bags',    '/data_bag'],
-      ['Cookbooks',    '/cookbooks',    '/cookbook']
+      ['Cookbooks',    '/cookbooks',    '/cookbook'],
+      ['Users',    '/users',    '/users']
     ]
 
     ##
@@ -72,7 +73,7 @@ module ChefBrowser
     ## -----
 
     get '/' do
-      redirect url '/nodes'
+      redirect url '/login'
     end
 
     get '/login/?' do
@@ -83,7 +84,7 @@ module ChefBrowser
     post '/login/?' do
       if chef_server.user.authenticate(params['username'], params['password'])
         session[:authorized] = params['username']
-        redirect url '/'
+        redirect url '/nodes'
       else
         session[:authorized] = false
         erb :login_form, layout: :login_layout, locals: { wrong: true }
@@ -213,6 +214,10 @@ module ChefBrowser
                         :cookbook
                       end
       erb template_name
+    end
+
+    get "/users/?" do
+      resource_list :users
     end
   end
 end

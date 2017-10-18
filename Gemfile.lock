@@ -77,7 +77,7 @@ GEM
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
     oj (2.9.9)
-    posix-spawn (0.3.8)
+    posix-spawn (0.3.13)
     predicated (0.2.6)
     pry (0.10.0)
       coderay (~> 1.1.0)
@@ -85,9 +85,9 @@ GEM
       slop (~> 3.4)
     puma (2.8.2)
       rack (>= 1.1, < 2.0)
-    pygments.rb (0.6.0)
+    pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
-      yajl-ruby (= 1.2.1)
+      yajl-ruby (~> 1.2.0)
     racc (1.4.11)
     rack (1.6.0)
     rack-protection (1.5.3)
@@ -345,7 +345,7 @@ GEM
       sexp_processor (>= 4.0)
     xpath (2.0.0)
       nokogiri (~> 1.3)
-    yajl-ruby (1.2.1)
+    yajl-ruby (1.2.2)
 
 PLATFORMS
   ruby
@@ -373,3 +373,6 @@ DEPENDENCIES
   sinatra
   tinyconfig (~> 0.1)
   wrong (= 0.7.1)
+
+BUNDLED WITH
+   1.15.1
