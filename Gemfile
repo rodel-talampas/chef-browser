@@ -20,7 +20,7 @@ gem 'rugged', '= 0.21.1b2'      # github-linguist specifies (~> 0.21.1b2), but 0
 group :development do
   gem "capybara"
   gem "chef-zero"
-  gem "cucumber"
+  gem "cucumber", ">= 4.0.0"
   gem "rack-test"
   gem "wrong", "= 0.7.1"
   gem "pry"
