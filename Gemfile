@@ -10,7 +10,7 @@ gem "puma"
 gem "rubysl", "~> 2.0", platforms: :rbx
 gem "racc", platforms: :rbx
 gem "deep_merge"
-gem "kramdown"
+gem "kramdown", ">= 2.3.1"
 gem "github-markup"
 gem "coderay"
 gem "pygments.rb"
