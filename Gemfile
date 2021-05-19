@@ -18,7 +18,7 @@ gem "github-linguist", "~> 3.0"
 gem 'rugged', '= 0.21.1b2'      # github-linguist specifies (~> 0.21.1b2), but 0.21.4 breaks
 
 group :development do
-  gem "capybara"
+  gem "capybara", ">= 2.5.0"
   gem "chef-zero"
   gem "cucumber"
   gem "rack-test"
