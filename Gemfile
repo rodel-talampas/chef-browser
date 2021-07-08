@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem "sinatra"
 gem "erubis", "~> 2.7.0"
-gem "ridley"
+gem "ridley", ">= 4.3.2"
 gem "tinyconfig", "~> 0.1"
 gem "oj", platforms: :ruby         # to be used by multijson
 gem "jrjackson", platforms: :jruby # to be used by multijson
